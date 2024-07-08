@@ -1,0 +1,88 @@
+body {
+    font-family: 'Pokemon Solid', sans-serif; /* Fuente temática */
+    background-color: #f0f0f0; /* Fondo gris claro */
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #3498db; /* Azul similar al de la Pokédex */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#digimon-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta el ancho mínimo de las tarjetas */
+    gap: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px; /* Limita el ancho máximo */
+    margin: 0 auto;
+}
+
+.digimon-card {
+    background-color: white;
+    border: 2px solid #e0e0e0; /* Borde gris claro */
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out; /* Transición para el hover */
+}
+
+.digimon-card:hover {
+    transform: translateY(-3px); /* Efecto hover sutil */
+}
+
+.digimon-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain; /* Ajustar la imagen al contenedor */
+    margin-bottom: 10px;
+}
+
+.digimon-card h2 {
+    font-size: 1.2rem;
+    margin: 0 0 5px 0;
+}
+
+.digimon-card .number {
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.details-button {
+    background-color: #2ecc71; /* Verde */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.details-button:hover {
+    background-color: #27ae60; /* Verde más oscuro */
+}
+/* Colores por tipo */
+.digimon-card.Vaccine {
+    background-color: #98fb98; /* Verde claro */
+}
+
+.digimon-card.Data {
+    background-color: #add8e6; /* Azul claro */
+}
+
+.digimon-card.Virus {
+    background-color: #f08080; /* Rojo claro */
+}
+
+.digimon-card.Free {
+    background-color: #ffff00; /* Amarillo */
+}
+
+.digimon-card.Unknown {
+    background-color: #d3d3d3; /* Gris claro */
+}
